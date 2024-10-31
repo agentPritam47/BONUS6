@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+c{
+    color: #282801;
+}
+d{
+    color: #081431;
+}
