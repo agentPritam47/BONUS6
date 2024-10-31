@@ -7,6 +7,13 @@ import * as THREE from "three";
 const Experience = ({ interact, color }) => {
   const one = useRef();
   const two = useRef();
+  let gs = 1
+
+  if (window.innerWidth < 800) {
+    gs = 0.7
+  } else{
+    gs = 1
+  }
 
 
 
@@ -26,7 +33,7 @@ const Experience = ({ interact, color }) => {
   return (
     <>
       <Billboard>
-        <group position-y={2.7} ref={one}>
+        <group position-y={2.7} ref={one} scale={gs}>
           <mesh>
             <cylinderGeometry args={[1.5, 1.5, 2, 60, 60]} />
             <meshPhysicalMaterial color="black" roughness={0.5} metalness={1} />
@@ -41,7 +48,7 @@ const Experience = ({ interact, color }) => {
           </mesh>
         </group>
 
-        <group position-y={-2.7} ref={two}>
+        <group position-y={-2.7} ref={two} scale={gs}>
           <mesh>
             <cylinderGeometry args={[1.5, 1.5, 2, 60, 60]} />
             <meshPhysicalMaterial color="#1c1c1c" roughness={1} metalness={1} />

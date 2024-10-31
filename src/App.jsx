@@ -9,10 +9,10 @@ const App = () => {
       <Scene interact={interact} color={color} />
 
       <div className="absolute top-0 left-0 w-full h-full flex pointer-events-none p-10 pb-[5vw] font-light">
-        <div className=" h-full w-1/2 text-white flex flex-col justify-between">
+        <div className=" h-full w-full sm:w-1/2 text-white flex flex-col justify-between">
           <div className=" mt-[12vw]">
             <h1
-              className={`text-7xl uppercase ${
+              className={`text-[6vh] sm:text-7xl uppercase ${
                 interact ? "opacity-0" : "opacity-100"
               } transition-all duration-700 ease-in-out`}
             >
@@ -20,7 +20,7 @@ const App = () => {
               Samsung
             </h1>
             <h1
-              className={`text-7xl uppercase ${
+              className={`text-[6vh] sm:text-7xl uppercase ${
                 interact ? "opacity-0" : "opacity-100"
               } transition-all duration-700 ease-in-out`}
             >
@@ -31,13 +31,13 @@ const App = () => {
           <p
             className={`${
               interact ? "opacity-0" : "opacity-70"
-            } w-[55%] transition-all duration-700 ease-in-out`}
+            } sm:w-[55%] w-full hidden sm:block transition-all duration-700 ease-in-out`}
           >
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
             delectus nulla earum nobis. Reiciendis, adipisci.
           </p>
         </div>
-        <div className=" h-full w-1/2 text-white flex justify-end">
+        <div className=" h-full w-1/2 hidden  text-white sm:flex justify-end">
           <div
             className={` mt-[12vw] ${
               interact ? "opacity-0" : "opacity-100"
@@ -55,12 +55,12 @@ const App = () => {
           INTERACT
         </button>
 
-        <div className={`p-10 absolute h-full w-[30%] flex flex-col items-center justify-center top-0 left-0 text-white ${interact ? "opacity-100" : "opacity-0"}  transition-all duration-700 ease-in-out`}>
+        <div className={`p-10  absolute sm:h-full sm:w-[30%] h-[30%] w-full flex flex-col items-center justify-center top-0 left-0 text-white ${interact ? "opacity-100" : "opacity-0"}  transition-all duration-700 ease-in-out`}>
           <h1 className=" text-5xl">COLORS</h1>
           <div className=" mt-10 flex gap-5">
-            <div onClick={()=>setColor("#000")} className={`h-[2vw] w-[2vw] rounded-full bg-zinc-800 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
-            <div onClick={()=>setColor("#282801")} className={`h-[2vw] w-[2vw] rounded-full bg-[#282801] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
-            <div onClick={()=>setColor("#081431")} className={`h-[2vw] w-[2vw] rounded-full bg-[#081431] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#000")} className={`sm:h-[2vw] sm:w-[2vw] h-[3vh] w-[3vh] rounded-full bg-zinc-800 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#282801")} className={`sm:h-[2vw] sm:w-[2vw] h-[3vh] w-[3vh] rounded-full bg-[#282801] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#081431")} className={`sm:h-[2vw] sm:w-[2vw] h-[3vh] w-[3vh] rounded-full bg-[#081431] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
           </div>
         </div>
       </div>
