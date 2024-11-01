@@ -55,11 +55,11 @@ const App = () => {
 
         <div className={`p-10  absolute sm:h-full  sm:w-[30%] h-[30%] w-full flex flex-col items-center justify-center top-0 left-0 text-white ${interact ? "opacity-100" : "opacity-0"}  transition-all duration-700 ease-in-out`}>
           <h1 className=" text-[6vh] sm:text-6xl">COLOR LAB</h1>
-          <div className=" sm:mt-10 mt-5 flex gap-7 w-fit h-fit bg-zinc-300 shadow-inner shadow-zinc-800 p-5 rounded-ee-3xl rounded-ss-3xl">
-            <div onClick={()=>setColor("#000")} className={`sm:h-[3vw] sm:w-[3vw] h-[3vh] w-[3vh] border-[1px] border-zinc-600 rounded-full bg-zinc-800 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
-            <div onClick={()=>setColor("#282801")} className={`sm:h-[3vw] sm:w-[3vw] h-[3vh] w-[3vh] rounded-full border-[1px] border-zinc-600 bg-lime-700 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
-            <div onClick={()=>setColor("#081431")} className={`sm:h-[3vw] sm:w-[3vw] h-[3vh] w-[3vh] rounded-full border-[1px] border-zinc-600 bg-blue-900 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
-            <div onClick={()=>setColor("#4b0917")} className={`sm:h-[3vw] sm:w-[3vw] h-[3vh] w-[3vh] rounded-full border-[1px] border-zinc-600 bg-[#4b0917] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+          <div className=" sm:mt-10 mt-2 flex gap-7 w-fit h-fit bg-zinc-300 shadow-inner shadow-zinc-800 p-5 rounded-ee-3xl rounded-ss-3xl">
+            <div onClick={()=>setColor("#000")} className={`sm:h-[3vw] sm:w-[3vw] h-[4vh] w-[4vh] border-[1px] border-zinc-600 rounded-full bg-zinc-800 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#282801")} className={`sm:h-[3vw] sm:w-[3vw] h-[4vh] w-[4vh] rounded-full border-[1px] border-zinc-600 bg-lime-700 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#081431")} className={`sm:h-[3vw] sm:w-[3vw] h-[4vh] w-[4vh] rounded-full border-[1px] border-zinc-600 bg-blue-900 ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
+            <div onClick={()=>setColor("#4b0917")} className={`sm:h-[3vw] sm:w-[3vw] h-[4vh] w-[4vh] rounded-full border-[1px] border-zinc-600 bg-[#4b0917] ${interact ? "pointer-events-auto" : "pointer-events-none"} cursor-pointer`}></div>
           </div>
         </div>
       </div>
