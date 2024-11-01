@@ -13,7 +13,7 @@ const Scene = ({ interact,color }) => {
       {/* <Stage adjustCamera={false} /> */}
       <Environment preset="city" />
       <directionalLight position={[1, 2, 3]} intensity={5} />
-      <OrbitControls enableDamping={false} enableZoom={false} />
+      <OrbitControls enablePan={false} enableZoom={false} />
 
       <EffectComposer disableNormalPass>
         <Bloom mipmapBlur luminanceThreshold={1} intensity={.5} />
