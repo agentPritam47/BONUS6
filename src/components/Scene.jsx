@@ -11,10 +11,9 @@ const Scene = ({ interact,color }) => {
       <color attach="background" args={["#1b1b1b"]} />
       <Experience interact={interact} color={color} />
       {/* <Stage adjustCamera={false} /> */}
-      {/* <Environment files={"https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr"} environmentIntensity={.1}/> */}
       <Environment preset="city" />
       <directionalLight position={[1, 2, 3]} intensity={5} />
-      <OrbitControls />
+      <OrbitControls enableDamping={false} enableZoom={false} />
 
       <EffectComposer disableNormalPass>
         <Bloom mipmapBlur luminanceThreshold={1} intensity={.5} />
